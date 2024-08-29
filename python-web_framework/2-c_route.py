@@ -16,9 +16,9 @@ def hello_hbnb():
     return ' HBNB!'
 
 
-@app.route('/c/text', strict_slashes=False)
+@app.route('/c/<text>', strict_slashes=False)
 def c_print(text):
-    """ Function that returns a string when / route is requested """
+    """ Function <that returns a string when / route is requested> """
     text = text.replace('_', ' ')
     return "C {}".format(text)
 
